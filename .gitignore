@@ -22,6 +22,9 @@ lib-cov
 *.pid
 *.gz
 
+.floo
+.flooignore
+
 pids
 logs
 results
