@@ -24,6 +24,7 @@ lib-cov
 
 .floo
 .flooignore
+azure.err
 
 pids
 logs
