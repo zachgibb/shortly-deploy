@@ -5,7 +5,6 @@ module.exports = function(grunt) {
 
     concat: {
       options: {
-        separator: ';',
       },
       basics: {
 
@@ -41,7 +40,7 @@ module.exports = function(grunt) {
       }
     },
 
-    uglify: {
+     uglify: {
       options:{
         mangle: false
       },
@@ -96,6 +95,7 @@ module.exports = function(grunt) {
 
     shell: {
       prodServer: {
+        command: 'git push azure master'
       }
     },
   });
@@ -135,6 +135,7 @@ module.exports = function(grunt) {
     'jshint',
     'concat',
     'uglify',
+    'jshint',
     'cssmin',
     'mochaTest'
   ]);
@@ -143,7 +144,8 @@ module.exports = function(grunt) {
     if(grunt.option('prod')) {
       // add your production server task here
       // git push azure master
-      grunt.log.writeln("successfully reached upload");
+      grunt.task.run(['shell']);
+      grunt.log.writeln("successfully pushed to server");
     } else {
       grunt.task.run([ 'server-dev' ]);
     }
