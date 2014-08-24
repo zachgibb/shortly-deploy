@@ -1,5 +1,5 @@
-Fri Aug 22 2014 14:54:36 GMT-0700 (MST):
-{ [Error: Unable to locate site named shortly-zd]
+Fri Aug 22 2014 19:19:14 GMT-0400 (EDT):
+{ [Error: Unable to locate site named shorter]
   stack: [Getter/Setter],
   __frame: 
    { name: 'lookupSiteNameAndWebSpace__20',
@@ -17,7 +17,7 @@ Fri Aug 22 2014 14:54:36 GMT-0700 (MST):
      offset: 12,
      col: 4 },
   rawStack: [Getter] }
-Error: Unable to locate site named shortly-zd
+Error: Unable to locate site named shorter
     at ___ (/usr/local/lib/node_modules/azure-cli/lib/commands/asm/websites/websitesclient._js:867:20)
     at ___ (/usr/local/lib/node_modules/azure-cli/node_modules/streamline/lib/callbacks/runtime.js:85:13)
     at ___ (/usr/local/lib/node_modules/azure-cli/lib/commands/asm/websites/websitesclient._js:473:131)
